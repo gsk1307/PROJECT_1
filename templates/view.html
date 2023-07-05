@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>List</title>
+    </head>
+    <body align="center" bgcolor="lightgreen">
+        <h1>Employee Details</h1>
+        <table border="5" align="center" >
+            <thead>
+                <td>ID</td>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Department</td>
+                <td>Phone</td>
+            </thead>
+        {% for row in rows %}
+            <tr> 
+               <td>{{row["id"]}}</td> 
+               <td>{{row["name"]}}</td>  
+               <td>{{row["email"]}}</td>  
+               <td>{{row["department"]}}</td>  
+               <td>{{row["phone"]}}</td> 
+            
+            </tr>
+        {% endfor %}
+        </table>
+        <br/>
+        <br/>
+        <h3><a href="/">Go back to home_page</a></h3>
+
+    </body>
+</html>
